@@ -30,7 +30,7 @@ def add_task():
         },400)
 
     contact = {
-        'id': "tasks"[-1]['id'] + 1,
+        'id': tasks[-1]['id'] + 1,
         'Name': request.json['Name'],
         'Contact': request.json.get('Contact', ""),
         'done': False
